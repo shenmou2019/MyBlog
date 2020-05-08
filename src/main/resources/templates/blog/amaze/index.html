@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+  <head th:replace="blog/amaze/header::head-fragment"></head>
+  <body id="blog">
+    <!--nav-->
+    <div th:replace="blog/amaze/header::nav-fragment"></div>
+    <!--header-->
+    <div th:replace="blog/amaze/header::header-fragment"></div>
+    <div class="am-g am-g-fixed blog-fixed">
+      <!--blog-list-->
+      <div th:replace="blog/amaze/blog-list::blog-list-fragment"></div>
+      <!--side-->
+      <div th:replace="blog/amaze/side::side-fragment"></div>
+    </div>
+    <!--footer-->
+    <footer th:replace="blog/amaze/footer::footer-fragment"></footer>
+  </body>
+  <script th:src="@{/blog/plugins/jquery/jquery.min.js}"></script>
+  <script th:src="@{/blog/plugins/search/search.js}"></script>
+</html>
